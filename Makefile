@@ -1,12 +1,12 @@
 .PHONY: lint test package ci
 
 lint:
-npm run lint
+	npm run lint
 
 test:
-npm test
+	npm test
 
 package: test
-npm pack
+	npm pack
 
 ci: lint test package
