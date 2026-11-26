@@ -19,6 +19,9 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Run lint
         run: make lint
 
@@ -35,6 +38,9 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Run tests
         run: make test
 
@@ -50,6 +56,9 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run package target
         run: make package
